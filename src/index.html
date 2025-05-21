@@ -4,16 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Contador</title>
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <p class="hero__text">
-                A festa começa em 360d 24h 24m 24s
+            <p class="hero__text" id="title">
+                <span id="timer"></span>
             </p>
+            <div class="infos">
+                <ul class="infos__items">
+                    <li class="infos__items__item"><b>Localização</b>
+                        Rua Html, 5 - JS - RO
+                    </li>
+                    <li class="infos__items__item"><b>Data e Hora</b>
+                        24/02/2026  19h
+                    </li>
+                </ul>
+                <button class="infos__button">Confirme sua presença</button>
+            </div>
         </div>
     </header>
+    <section class="event">
+        <div class="container" data-aos = "fade-right">
+            <div class="event__party">
+                <h2 class="event__party__title">Pool-Party</h2>
+                <p class="event__party__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quaerat atque quibusdam provident excepturi eum doloremque minima nesciunt magni rerum assumenda sint incidunt, ab mollitia maiores, nisi nostrum odit? Obcaecati!
+                </p>
+            </div>
+            <img class="event__img-party" src="/src/images/poolParty.jpg" alt="poolParty">
+        </div>
+    </section>
+    <section class="event event--img-left">
+        <div class="container" data-aos = "fade-left">
+            <div class="event__drinks">
+                <h2 class="event__drinks__title">Drinks</h2>
+                <p class="event__drinks__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quaerat atque quibusdam provident excepturi eum doloremque minima nesciunt magni rerum assumenda sint incidunt, ab mollitia maiores, nisi nostrum odit? Obcaecati!
+                </p>
+            </div>
+            <img class="event__img-drinks" src="/src/images/drinks.jpg" alt="poolParty">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
